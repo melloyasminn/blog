@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog em flexbox</title>
+
+    <style>
+        .header {
+            background-color: rgb(255, 255, 255);
+            color: rgb(255, 103, 222);
+            text-align: center;
+            padding: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 30px;
+
+        }
+
+        h1{
+            text-shadow: 3px 3px 3px #9b9b9b; 
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .flex-item{
+            flex: 1;
+            margin-left: 30px;
+            border: 4px dotted #f070c5;
+            padding: 1rem;
+            min-width: 265px;
+            text-align: center
+        }
+
+        h2{
+            color: rgb(245, 157, 230);
+        }
+
+        .footer{
+            background-color: #f3f2f2;
+            color: #818181;
+            text-align: center;
+            padding: 1rem;
+            
+           
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1> blog da yas </h1>
+    </header>
+
+    <main class="flex-container">
+        <article class="flex-item">
+            <h2>Bernardo</h2>
+            <p> <img src="images/bernardo.jpeg" alt="" style="height: 200px; width: 200px;"></p>
+        </article>
+
+        <article class="flex-item">
+            <h2>Charlie </h2>
+            <p> <img src="images/charlie.jpeg" alt="" style="height: 200px; width: 200px;"></p>
+        </article>
+
+        <article class="flex-item">
+            <h2>Lola</h2>
+            <p> <img src="images/lola.jpeg" alt="" style="height: 200px; width: 200px;"></p>
+        </article>
+
+        <article class="flex-item">
+            <h2>Filó </h2>
+            <p> <img src="images/filo.jpeg" alt="" style="height: 200px; width: 200px;"></p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy;2023 Meu blog. Todos os direitos reservados.</p>
+        <p>Yasmin Mello</p>
+    </footer>
+</body>
+
+</html>
